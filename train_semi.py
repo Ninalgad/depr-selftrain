@@ -9,7 +9,7 @@ from evaluation import evaluate
 from utils import *
 from loaders import get_static_loader
 from datasets.rmhd import RedditMentalHealthDataset
-from datasets.depsign2023 import DepSign2023
+from datasets.depsign import DepSign2023
 from utils import make_directories
 from model import get_classifier
 
@@ -65,8 +65,7 @@ def main():
 
     logger.info(f"Loading pseudo labels from '{args.pseudolabels}'")
     labels = np.load(args.pseudolabels)
-    assert len(labels) == len(
-        unlabeled_texts), f"Labels from '{args.pseudolabels}' is not compatible with {dataset_name}"
+    assert len(labels) == len(unlabeled_texts), f"'{args.pseudolabels}' is not compatible with {dataset_name}"
 
     # create training algorithm
     model, tokenizer = get_classifier(args.model_name)

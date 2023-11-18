@@ -7,7 +7,7 @@ from loguru import logger
 from torch.optim import Adam
 
 from loaders import get_static_loader
-from datasets.depsign2023 import DepSign2023
+from datasets.depsign import DepSign2023
 from evaluation import evaluate
 from model import get_classifier
 from utils import *
@@ -125,7 +125,7 @@ def train(model, device, optimizer, train_loader, val_loader, args, logger):
             results = evaluate(model, val_loader, device, debug=args.debug)
         val = results['macro f1-score']
         train_loss = np.mean(train_loss)
-        logger.info(f"Epoch: {epoch}, Train Loss: {train_loss:,,4f}, Dev f1-score: {val:,.4f}")
+        logger.info(f"Epoch: {epoch}, Train Loss: {train_loss:,.4f}, Dev f1-score: {val:,.4f}")
 
         if val > best_val:
             best_val = val
