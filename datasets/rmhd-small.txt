@@ -1,0 +1,8 @@
+https://zenodo.org/record/3941387/files/adhd_2018_features_tfidf_256.csv
+https://zenodo.org/record/3941387/files/adhd_2019_features_tfidf_256.csv
+https://zenodo.org/record/3941387/files/adhd_post_features_tfidf_256.csv
+https://zenodo.org/record/3941387/files/adhd_pre_features_tfidf_256.csv
+https://zenodo.org/record/3941387/files/depression_2018_features_tfidf_256.csv
+https://zenodo.org/record/3941387/files/depression_2019_features_tfidf_256.csv
+https://zenodo.org/record/3941387/files/depression_post_features_tfidf_256.csv
+https://zenodo.org/record/3941387/files/depression_pre_features_tfidf_256.csv
