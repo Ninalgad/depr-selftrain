@@ -1,7 +1,7 @@
 # Depression Detection with Reddit and Self-training
 **In Development** <br>
 This repository contains the implementation code for paper: <br>
-__Rethinking the Value of Labels for Improving Class-Imbalanced Learning__ <br>
+__Depression Detection with {R}eddit and Self-training__ <br>
 [Dean Ninalga](justin.ninalga@mail.utoronto.ca) <br>
 _Proceedings of the Third Workshop on Language Technology for Equality, Diversity and Inclusion_ <br>
 as part of _The 14th International Conference on Recent Advances in Natural Language Processing (RANLP), 2023_ <br>
